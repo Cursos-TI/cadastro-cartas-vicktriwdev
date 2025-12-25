@@ -4,8 +4,6 @@
 int main(){
 //suporte para acentos
 setlocale(LC_ALL, "");
-prinft("Desafio Super Trunfo");
-printf("\n");
 
 //declaração de variáveis
 char cidade1 [20];
