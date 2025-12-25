@@ -7,8 +7,8 @@ setlocale(LC_ALL, "");
 
 //declaração de variáveis
 char cidade1 [20];
-char estado1 [2];
-char codigo1 [5];
+char estado1 [20];
+char codigo1 [4];
 int populacao1;
 float km1;
 float pib1;
@@ -18,11 +18,11 @@ int turistas1;
 printf("Digite a cidade da carta:  \n");
 scanf("%s", cidade1);
 
-printf("Digite a primeira letra do estado da carta:  \n");
-scanf("%s", estado1);
+printf("Digite o estado da carta:  \n");
+scanf("%19s", estado1);
 
 printf("Digite o código da carta usando a inicial do estado e dois números:  \n");
-scanf("%s", codigo1);
+scanf("%3s", codigo1);
 
 printf("Digite a população da cidade:  \n");
 scanf("%d", &populacao1);
@@ -40,8 +40,8 @@ printf("\n");
 
 //variáveis da segunda carta
 char cidade2 [20];
-char estado2 [2];
-char codigo2 [5];
+char estado2 [20];
+char codigo2 [4];
 int populacao2;
 float km2;
 float pib2;
@@ -52,11 +52,11 @@ printf("\n");
 printf("Digite a cidade da segunda carta:  \n");
 scanf("%s", cidade2);
 
-printf("Digite a primeira letra do estado da segunda carta:  \n");
-scanf("%s", estado2);
+printf("Digite o estado da segunda carta:  \n");
+scanf("%19s", estado2);
 
 printf("Digite o código da segunda carta usando a inicial do estado e dois números:  \n");
-scanf("%s", codigo2);
+scanf("%4s", codigo2);
 
 printf("Digite a população da segunda cidade:  \n");
 scanf("%d", &populacao2);
@@ -75,8 +75,8 @@ printf("\n");
 //exibição da primeira carta
 printf("Carta 1: \nCidade: %s \nEstado: %s \nCódigo: %s \n", cidade1, estado1, codigo1); 
 printf("População: %d \nÁrea: %f km²\nPIB: %.2f bilhões de reais \nNúmero de pontos turísticos: %d ",populacao1, km1, pib1, turistas1);
- 
 printf("\n");
+
 //exibição da segunda carta
 printf("Carta 2: \nCidade: %s \nEstado: %s \nCódigo: %s \n", cidade2, estado2, codigo2);
 printf("População: %d \nÁrea: %f km²\nPIB: %.2f bilhões de reais \nNúmero de pontos turísticos: %d ",populacao2, km2, pib2, turistas2);
