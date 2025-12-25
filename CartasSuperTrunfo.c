@@ -76,7 +76,7 @@ printf("\n");
 printf("Carta 1: \nCidade: %s \nEstado: %s \nCódigo: %s \n", cidade1, estado1, codigo1); 
 printf("População: %d \nÁrea: %f km²\nPIB: %.2f bilhões de reais \nNúmero de pontos turísticos: %d ",populacao1, km1, pib1, turistas1);
  
-prinft("\n");
+printf("\n");
 //exibição da segunda carta
 printf("Carta 2: \nCidade: %s \nEstado: %s \nCódigo: %s \n", cidade2, estado2, codigo2);
 printf("População: %d \nÁrea: %f km²\nPIB: %.2f bilhões de reais \nNúmero de pontos turísticos: %d ",populacao2, km2, pib2, turistas2);
