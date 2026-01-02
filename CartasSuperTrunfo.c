@@ -16,6 +16,7 @@ int turistas1, turistas2;
 float densidade1, densidade2;
 float percapita1, percapita2;
 double superpoder1, superpoder2;
+char vencedor[2][10] = {"Carta 2", "Carta 1"};
 
 //entrada de dados da primeira carta
 printf("Digite a cidade da carta:  \n");
@@ -49,7 +50,7 @@ printf("Digite o estado da segunda carta:  \n");
 scanf("%19s", estado2);
 
 printf("Digite o código da segunda carta usando a inicial do estado e dois números:  \n");
-scanf("%4s", codigo2);
+scanf("%3s", codigo2);
 
 printf("Digite a população da segunda cidade:  \n");
 scanf("%u", &populacao2);
@@ -79,14 +80,22 @@ superpoder2 = populacao2 + km2 + pib2 + turistas2 + percapita2 + (1.0 / densidad
 printf("Carta 1: \nCidade: %s \nEstado: %s \nCódigo: %s \n", cidade1, estado1, codigo1); 
 printf("População: %.0u \nÁrea: %.2f km²\nPIB: %.2f bilhões de reais \nNúmero de pontos turísticos: %d\n",populacao1, km1, pib1, turistas1);
 //espaço visual para a segunda carta
-printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\nSuper Poder: %2.lf", densidade1, percapita1, superpoder1);
+printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\nSuper Poder: %.2lf", densidade1, percapita1, superpoder1);
 printf("\n\n");
 printf("Carta 2: \nCidade: %s \nEstado: %s \nCódigo: %s \n", cidade2, estado2, codigo2);
 printf("População: %.0u \nÁrea: %.2f km²\nPIB: %.2f bilhões de reais \nNúmero de pontos turísticos: %d\n",populacao2, km2, pib2, turistas2);
-printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\nSuper Poder: %2.lf", densidade2, percapita2, superpoder2);
+printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\nSuper Poder: %.2lf", densidade2, percapita2, superpoder2);
+printf("\n\n");
 
-//comparação das cartas
-printf("População carta 1 > carta 2? %d\n", populacao1, populacao2);
+//comparação final
+printf("Resultado da Batalha\n");
+printf("População: %s venceu\n", vencedor[populacao1 > populacao2], populacao1 > populacao2);
+printf("Área (km²): %s venceu\n", vencedor[km1 > km2], km1 > km2);
+printf("PIB: %s venceu\n", vencedor[pib1 > pib2], pib1 > pib2);
+printf("Pontos Turísticos: %s venceu\n", vencedor[turistas1 > turistas2], turistas1 > turistas2;
+printf("Densidade Populacional: %s venceu\n", vencedor[densidade1 < densidade2], densidade1 < densidade2);
+printf("PIB per Capita: %s venceu\n", vencedor[percapita1 > percapita2], percapita1 > percapita2);
+printf("Super Poder: %s venceu\n", vencedor[superpoder1 > superpoder2], superpoder1 > superpoder2);
 
 return 0;
 }
