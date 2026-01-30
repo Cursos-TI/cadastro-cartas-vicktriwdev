@@ -15,7 +15,7 @@ float pib1, pib2;
 int turistas1, turistas2;
 float densidade1, densidade2;
 float percapita1, percapita2;
-double superpoder1, superpoder2;
+float superpoder1, superpoder2;
 char vencedor[2][10] = {"Carta 2", "Carta 1"};
 
 //entrada de dados da primeira carta
